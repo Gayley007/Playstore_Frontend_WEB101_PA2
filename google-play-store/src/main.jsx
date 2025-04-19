@@ -1,11 +1,35 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
 import './index.css'
-import App from './App.jsx'
+import App from './game.jsx'
+    
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <App />
-  </BrowserRouter>
+  </StrictMode>,
+
 )
+
+// import { StrictMode } from 'react';
+// import { createRoot } from 'react-dom/client';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// import './index.css';
+// import App from './game.jsx';
+// import New from './components/new.jsx'; 
+// import Data from './components/data.jsx'; 
+
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<App />} />
+//         <Route path="/new" element={<New />} />
+//         <Route path="/Data" element={<Data />} />
+//       </Routes>
+//     </BrowserRouter>
+//   </StrictMode>
+// );
+
