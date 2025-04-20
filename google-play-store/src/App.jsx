@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
+import Game from './game.jsx'
 
 const App = () => {
   return (
     <div>
-      <h1>Welcome to the Google Play Store</h1>
-      {/* Add your components or routes here */}
+      <Game />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

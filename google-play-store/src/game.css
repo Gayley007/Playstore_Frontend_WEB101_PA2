@@ -9,19 +9,19 @@ body, html {
 
 /* Header bar styling */
 .header {
-  position: fixed; /* Sticks header to the top */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  height: 56px; /* Fixed height for header */
-  display: flex; /* Horizontal layout */
-  justify-content: space-between; /* Space between left and right sections */
-  align-items: center; /* Vertically center items */
-  padding: 1px 16px; /* Slight padding inside header */
-  background-color: #ffffff; /* White background */
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow below header */
-  box-sizing: border-box; /* Include padding in width/height */
-  z-index: 1000; /* Ensure it stays on top of other elements */
+  height: 75px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1px 16px; 
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+  box-sizing: border-box; 
+  z-index: 1000;
 }
 
 /* Container for logo and navigation tabs */
@@ -37,64 +37,42 @@ body, html {
   align-items: center;
   gap: 8px; /* Space between icon and text */
 }
-
-/* Icon in the logo */
 .google-logo-icon {
   width: 24px;
   height: 24px;
 }
-
-/* Text in the logo */
 .google-logo-text {
   font-size: 20px;
   font-weight: 500;
   color: #5f6368;
 }
-
 /* Navigation tabs container */
-.tabs {
-  display: flex;
-  gap: 24px; /* Space between tabs */
-  font-weight: 900;
-  font-size: 14px;
-  color: #4b5563; /* Default tab color */
-
+.tabs .tab {
+  color: black; 
+  text-decoration: none;
+  padding: 8px 16px;
+  border-bottom: 2px solid transparent; 
+  transition: color 0.3s, border-color 0.3s; 
 }
-.tabs:hover {
-  color: rgb(26, 13, 169);
+.tabs .tab:hover {
+  color: green;
 }
-
-/* Base tab styling */
-.tab {
-  cursor: pointer; /* Cursor indicates clickable */
-  padding-bottom: 1px;
-  border-bottom: 1px solid transparent; /* No visible underline initially */
+.tabs .tab.active {
+  color: rgb(0, 128, 0); 
+  border-color: green; 
 }
-
-/* Active tab styling */
-.tab2 {
-  color: #292a2a; /* Darker color for active tab */
-  border-color: #474e4b; /* Underline color for active tab */
-}
-.tab2:hover {
-  color: rgb(15, 52, 163);
-}
-
-/* Right-side section of header (icons and profile) */
+/* Right-side section */
 .right-section {
   display: flex;
   align-items: center;
-  gap: 24px; /* Space between each item */
+  gap: 24px; 
 }
-
-/* Styling for each icon */
 .icon {
   width: 20px;
   height: 20px;
   color: #4b5563;
-  cursor: pointer; /* Clickable */
+  cursor: pointer; 
 }
-
 /* Profile circle with initials or image */
 .profile {
   width: 32px;
@@ -112,7 +90,7 @@ body, html {
 /* Main content below the header */
 .main-content {
   position: fixed;
-  top: 10px; /* Overlaps slightly with header */
+  top: 10px; 
   left: 0;
   display: flex;
   flex-wrap: wrap; /* Allow content to wrap onto multiple lines */

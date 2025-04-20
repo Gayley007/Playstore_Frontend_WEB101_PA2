@@ -1,14 +1,15 @@
 import React from "react";
 import { Search, HelpCircle } from "lucide-react";
 import "./game.css";
+import { NavLink } from "react-router-dom"; 
 import New from './components/new.jsx'; 
 import Data from './components/data.jsx'; 
 import Footer from './components/footer.jsx'; 
 export default function App() {
   return (
     <>
-      {/* Header/Nav */}
-      <div className="header">
+       {/* Header/Nav */}
+       <div className="header">
         {/* Left section: Logo and Tabs */}
         <div className="left-section">
           <div className="google-play-logo">
@@ -21,9 +22,9 @@ export default function App() {
           </div>
 
           <div className="tabs">
-            <div className="tab2">Games</div>
-            <div className="tab">Apps</div>
-            <div className="tab">Kids</div>
+            <NavLink to="/games" className="tab" activeClassName="active">Games</NavLink>
+            <NavLink to="/apps" className="tab" activeClassName="active">Apps</NavLink>
+            <NavLink to="/kids" className="tab" activeClassName="active">Kids</NavLink>
           </div>
         </div>
 
