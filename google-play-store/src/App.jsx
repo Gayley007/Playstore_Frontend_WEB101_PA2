@@ -3,7 +3,9 @@ import KidsSection from "./kids_page/KidsSection";
 
 function App() {
   return (
-    <KidsSection /> 
+    <Routes>
+      <Route path="/kids" element={<KidsSection />} />
+    </Routes>
   );
 }
 
