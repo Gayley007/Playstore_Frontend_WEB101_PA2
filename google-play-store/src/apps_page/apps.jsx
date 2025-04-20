@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom"; 
 import "../apps_page/apps.css"; 
 import { Search, HelpCircle } from "lucide-react";
+import Footer from '../components/footer.jsx'; // Use the existing Footer component
 
 const recommended = [
   { title: 'X', rating: 3.9, img: 'recommended1.png' },
@@ -35,44 +36,6 @@ const productivity = [
   { title: 'Microsoft Excel: Spreadsheets', rating: 4.7, img: 'productivity7.png' },
   { title: 'Jnotes: Note-Taking&Editor PDF', rating: 4.2, img: 'productivity8.png' }
 ];
-
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="footer-columns">
-        <div className="footer-column">
-          <h3>Google Play</h3>
-          <ul>
-            <li>Play Pass</li>
-            <li>Play Points</li>
-            <li>Gift cards</li>
-            <li>Redeem</li>
-            <li>Refund policy</li>
-          </ul>
-        </div>
-
-        <div className="footer-column">
-          <h3>Kids & family</h3>
-          <ul>
-            <li>Parent Guide</li>
-            <li>Family sharing</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="footer-bottom">
-        <div className="footer-links">
-          <a href="#">Terms of Service</a>
-          <a href="#">Privacy</a>
-          <a href="#">About Google Play</a>
-          <a href="#">Developers</a>
-          <a href="#">Google Store</a>
-        </div>
-        <div className="footer-language">Bhutan (English)</div>
-      </div>
-    </footer>
-  );
-};
 
 export default function AppSection() { // Renamed from KidsSection to AppSection
   const [activeButton, setActiveButton] = useState("All ages up to 12");

@@ -5,11 +5,12 @@ import { NavLink } from "react-router-dom";
 import New from './components/new.jsx'; 
 import Data from './components/data.jsx'; 
 import Footer from './components/footer.jsx'; 
-export default function App() {
+
+export default function Game() {
   return (
     <>
-       {/* Header/Nav */}
-       <div className="header">
+      {/* Header/Nav */}
+      <div className="header">
         {/* Left section: Logo and Tabs */}
         <div className="left-section">
           <div className="google-play-logo">
@@ -45,14 +46,13 @@ export default function App() {
         <div className="feature-card">Watch</div>
         <div className="feature-card">Car</div>
       </div>
-       {/* Calling Data pages */}
+
+      {/* Calling Data pages */}
       <Data />
-     {/* calling Top Charts */}
+      {/* Calling Top Charts */}
       <New />
-      {/* calling footer */}
+      {/* Calling Footer */}
       <Footer />
-      
     </>
-  
   );
 }
