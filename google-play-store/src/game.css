@@ -1,0 +1,121 @@
+/* Ensure the entire viewport is used with no margin/padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+}
+
+/* Header bar styling */
+.header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1px 16px; 
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); 
+  box-sizing: border-box; 
+  z-index: 1000;
+}
+
+/* Container for logo and navigation tabs */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between logo and tabs */
+}
+
+/* Google Play logo and text section */
+.google-play-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+}
+.google-logo-icon {
+  width: 24px;
+  height: 24px;
+}
+.google-logo-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5f6368;
+}
+/* Navigation tabs container */
+.tabs .tab {
+  color: black; 
+  text-decoration: none;
+  padding: 8px 16px;
+  border-bottom: 2px solid transparent; 
+  transition: color 0.3s, border-color 0.3s; 
+}
+.tabs .tab:hover {
+  color: green;
+}
+.tabs .tab.active {
+  color: rgb(0, 128, 0); 
+  border-color: green; 
+}
+/* Right-side section */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 24px; 
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #4b5563;
+  cursor: pointer; 
+}
+/* Profile circle with initials or image */
+.profile {
+  width: 32px;
+  height: 32px;
+  background-color: #f97316; /* Orange background */
+  color: white;
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Main content below the header */
+.main-content {
+  position: fixed;
+  top: 10px; 
+  left: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap onto multiple lines */
+  gap: 16px; /* Space between items */
+  padding: 0;
+  margin-top: 56px; /* Push down below the header */
+
+}
+
+/* Individual content cards */
+.feature-card {
+  background-color: #f3f4f6; /* Light gray background */
+  padding: 15px;
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+  font-size: 15px;
+  color: #1f2937; /* Text color */
+  min-width: 60px;
+  text-align: center;
+  height: 13px; /* Very short height */
+}
+
+/* Hover effect for content cards */
+.feature-card:hover {
+  transform: translateY(-4px); /* Lift card slightly */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+  background-color: #e5e7eb; /* Slightly lighter background */
+}
