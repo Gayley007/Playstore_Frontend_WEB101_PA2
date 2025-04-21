@@ -4,7 +4,7 @@ body {
 }
 
 /* Header bar styling */
-.header {
+.kids-header {
   position: fixed; 
   top: 0;
   left: 0;
@@ -21,56 +21,55 @@ body {
 }
 
 /* Container for logo and navigation tabs */
-.left-section {
+.kids-left-section {
   display: flex;
   align-items: center;
-  gap: 40px; /* Space between logo and tabs */
+  gap: 40px;
 }
 
 /* Google Play logo and text section */
-.google-play-logo {
+.kids-google-play-logo {
   display: flex;
   align-items: center;
-  gap: 8px; /* Space between icon and text */
+  gap: 8px;
 }
-.google-logo-icon {
+.kids-google-logo-icon {
   width: 24px;
   height: 24px;
 }
-.google-logo-text {
+.kids-google-logo-text {
   font-size: 20px;
   font-weight: 500;
   color: #5f6368;
 }
 /* Navigation tabs container */
-.tabs .tab {
+.kids-tabs .kids-tab {
   color: black; 
   text-decoration: none;
   padding: 8px 16px;
   border-bottom: 2px solid transparent; 
   transition: color 0.3s, border-color 0.3s; 
 }
-.tabs .tab:hover {
+.kids-tabs .kids-tab:hover {
   color: green;
 }
-.tabs .tab.active {
-  color: rgb(0, 128, 0); 
+.kids-tabs .kids-tab.active {
   border-color: green; 
 }
 /* Right-side section */
-.right-section {
+.kids-right-section {
   display: flex;
   align-items: center;
   gap: 24px; 
 }
-.icon {
+.kids-icon {
   width: 20px;
   height: 20px;
   color: #4b5563;
   cursor: pointer; 
 }
 /* Profile circle with initials or image */
-.profile {
+.kids-profile {
   width: 32px;
   height: 32px;
   background-color: #f97316; /* Orange background */
@@ -83,33 +82,29 @@ body {
   font-size: 14px;
 }
 
-/* Main content below the header */
-.Main-section {
-  position: relative; 
-  margin-top: 100px;
-}
-.image1 {
+/* Main content  */
+.kids-main-section {
   width: 100%;
-  margin-bottom: 10px; 
+  margin-top: 77%;
 }
 
 /* Age Filter section */
-.age-filter-section {
+.kids-age-filter-section {
   margin-top: 20px;
   text-align: center;
 }
-.age-filter-title {
+.kids-age-filter-title {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 540;
   color: #1f2937;
   margin-bottom: 16px;
 }
-.age-buttons {
+.kids-age-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
-.age-button {
+.kids-age-button {
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 500;
@@ -120,35 +115,35 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.age-button:hover {
+.kids-age-button:hover {
   background-color: #f3f4f6;
   border: 1px solid #d1d5db;
 }
-.age-button.active {
-  background-color: #e6f4ea; 
-  color: #137333; 
+.kids-age-button.kids-active {
+  background-color: rgb(179, 232, 179); 
+  color: green;
   border: none; 
 }
 
 /* game cards */
-.card-section {
+.kids-card-section {
   padding-left: 100px;
   margin-top: 60px;
   margin-bottom: 30px;
 }
-.section-title {
+.kids-section-title {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
   color: #383838;
   margin-left: 30px;
 }
-.card-row {
+.kids-card-row {
   display: flex; 
   overflow-x: auto;
   padding-bottom: 10px;
 }
-.card {
+.kids-card {
   flex: 0 0 auto; /* Prevent flex items from shrinking */
   width: 145px; 
   height: 200px; 
@@ -158,23 +153,23 @@ body {
   align-items: center;
   padding: 10px;
 }
-.card:hover {
+.kids-card:hover {
   background-color: #f0f0f0;
 }
-.card-image {
+.kids-card-image {
   width: 140px;
   height: 130px;
   object-fit: cover; 
   border-radius: 16px; 
 }
-.card-title {
+.kids-card-title {
   font-size: 14px; 
   font-weight: 450;
   color: #222;
   margin-left: 3px;
   margin-top: 0px;
 }
-.card-rating {
+.kids-card-rating {
   font-size: 13px;
   color: #585858;
   margin-top: -12px;
@@ -182,7 +177,7 @@ body {
 }
 
 /* Footer */
-.footer {
+.kids-footer {
   padding: 40px 60px;
   background-color: #fff;
   font-family: Roboto, Arial, sans-serif;
@@ -191,36 +186,36 @@ body {
   border-top: 1px solid #e0e0e0;
 }
 /* Container for grouped footer columns */
-.footer-columns {
+.kids-footer-columns {
   display: flex;
   justify-content: flex-start;
   gap: 80px;
   margin-bottom: 40px;
 }
 /* Section titles in each column */
-.footer-column h3 {
+.kids-footer-column h3 {
   font-size: 16px;
   font-weight: 500;
   color: #202124;
   margin-bottom: 16px;
 }
 /* Remove default list styling */
-.footer-column ul {
+.kids-footer-column ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 /* hover */
-.footer-column ul :hover {
+.kids-footer-column ul :hover {
   color: green;
 }
 /* List items under each heading */
-.footer-column ul li {
+.kids-footer-column ul li {
   margin-bottom: 12px;
   cursor: pointer;
 }
 /* Bottom section of footer (links + language) */
-.footer-bottom {
+.kids-footer-bottom {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -230,21 +225,21 @@ body {
   color: #5f6368;
 }
 /* Links container */
-.footer-links {
+.kids-footer-links {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
 }
-.footer-links :hover {
+.kids-footer-links :hover {
   color: green;
 }
 /* Individual links */
-.footer-links a {
+.kids-footer-links a {
   text-decoration: none;
   color: #5f6368;
 }
 /* Language display on the bottom right */
-.footer-language {
+.kids-footer-language {
   margin-top: 1px;
   padding-left: 500px;
 }

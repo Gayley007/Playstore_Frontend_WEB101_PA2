@@ -1,8 +1,7 @@
 
 .appContainer {
     padding: 10px;
-    margin-left: 90px;
-    margin-top: 60rem;
+    margin-left: 100px;
   }
   .sectionTitle {
     font-size: 24px;
@@ -10,6 +9,7 @@
     margin-bottom: 16px;
     text-align: left;
     color: #000000;
+    margin-left: 50px;
   }
 
   .carouselNav {
@@ -21,7 +21,7 @@
   
   .carouselWrapper {
     overflow: hidden;
-    width: 100%;
+    width: 180%;
   }
   
   .carousel {
@@ -32,7 +32,7 @@
   
   .card {
     flex: 0 0 auto;
-    width: 300px;
+    width: 377px;
     height: 350px;
     background: #fff;
     border-radius: 15px;

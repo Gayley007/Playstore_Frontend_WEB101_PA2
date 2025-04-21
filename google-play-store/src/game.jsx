@@ -10,41 +10,41 @@ export default function Game() {
   return (
     <>
       {/* Header/Nav */}
-      <div className="header">
+      <div className="game-header">
         {/* Left section: Logo and Tabs */}
-        <div className="left-section">
-          <div className="google-play-logo">
+        <div className="game-left-section">
+          <div className="game-google-play-logo">
             <img
               src="logo.png"
               alt="Google Play Logo"
-              className="google-logo-icon"
+              className="game-google-logo-icon"
             />
-            <span className="google-logo-text">Google Play</span>
+            <span className="game-google-logo-text">Google Play</span>
           </div>
 
-          <div className="tabs">
-            <NavLink to="/games" className="tab" activeClassName="active">Games</NavLink>
-            <NavLink to="/apps" className="tab" activeClassName="active">Apps</NavLink>
-            <NavLink to="/kids" className="tab" activeClassName="active">Kids</NavLink>
+          <div className="game-tabs">
+            <NavLink to="/games" className="game-tab" activeClassName="game-active">Games</NavLink>
+            <NavLink to="/apps" className="game-tab" activeClassName="game-active">Apps</NavLink>
+            <NavLink to="/kids" className="game-tab" activeClassName="game-active">Kids</NavLink>
           </div>
         </div>
 
         {/* Right section: Icons */}
-        <div className="right-section">
-          <Search className="icon" />
-          <HelpCircle className="icon" />
-          <div className="profile">S</div>
+        <div className="game-right-section">
+          <Search className="game-icon" />
+          <HelpCircle className="game-icon" />
+          <div className="game-profile">S</div>
         </div>
       </div>
 
       {/* Main Section Below Navbar */}
-      <div className="main-content">
-        <div className="feature-card">Phone</div>
-        <div className="feature-card">Tablet</div>
-        <div className="feature-card">Tv</div>
-        <div className="feature-card">chromebook</div>
-        <div className="feature-card">Watch</div>
-        <div className="feature-card">Car</div>
+      <div className="game-main-content">
+        <div className="game-feature-card">Phone</div>
+        <div className="game-feature-card">Tablet</div>
+        <div className="game-feature-card">Tv</div>
+        <div className="game-feature-card">chromebook</div>
+        <div className="game-feature-card">Watch</div>
+        <div className="game-feature-card">Car</div>
       </div>
 
       {/* Calling Data pages */}
