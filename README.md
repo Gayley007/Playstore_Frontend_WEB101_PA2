@@ -80,7 +80,7 @@ Playstore_Frontend_WEB101_PA2/
 - **Usage Example**:
   ```jsx
   <Game />
-  ``
+  ```
 ---
 
 ## Functionality
@@ -100,24 +100,21 @@ Playstore_Frontend_WEB101_PA2/
 ### Branching Strategy
 1. **Main Branch**:
    - Reserved for production-ready code.
-   - Only stable and tested code from the `development` branch is merged there.
+   - We have not pushed any work to the `main` branch yet because the project is still under development and contains unresolved errors.
 
 2. **Development Branch**:
    - Used as the branch to test out befre being put in main.
    - All team members merged their completed features into this branch after review.
+- Currently, the `development` branch has some issues due to merging conflicts, such as similar class names from different branches causing clashes.
 
 3. **Feature Branches**:
    - Each team member created a feature branch for their assigned task.
 
 
 ### Collaboration Workflow
-   - Tasks were divided among team members, and each member worked on their assigned feature in a separate branch.
-   - Team members implemented their features and committed changes with descriptive commit messages.
-   - Before merging into the `development` branch, pull requests were created for review by other team members.
-   - After approval, feature branches were merged into the `development` branch.
-   - Once all features were integrated and tested in the `development` branch, the code was merged into the `main` branch for deployment.
+   - Each member of our team was assigned a specific feature to work on in a different branch as we divided up the tasks. We committed usually as we worked on also made sure that every commit message we made outlined the modifications we make. Then we created a pull request before implementing our work into the main development branch. The feature branches were merged into the development branch after the pull requests were accepted. Many errors occurred after the branches were merged, so we tried fixing some and tested in the development branch to make sure everything went as planned. However, because of similar classnames it caused style conflicts. Thus, the final code has not been merged into the main branch. We'll continue to work on this project and complete it and make it responsive and smoother than now.
 
 ### 
 
 ## References
-- [Google Play Store Design Guidelines](https://docs.google.com/presentation/d/1w9sbOdxwRDW8yB6RBrInw3tYg3AgvlEL/edit?usp=sharing)
+- [Google Play Store Design Guidelines](https://play.google.com/store/games?hl=en)
