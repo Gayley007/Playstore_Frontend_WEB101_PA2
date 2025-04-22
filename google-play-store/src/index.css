@@ -1,18 +1,19 @@
+/* Root variables and global settings */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+ /* Supports dark/light themes */
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: #ffffff;
+ /* Default text and background colors */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/* Anchor tag styles */
 a {
   font-weight: 500;
   color: #646cff;
@@ -21,7 +22,7 @@ a {
 a:hover {
   color: #535bf2;
 }
-
+/* Basic body reset and layout */
 body {
   margin: 0;
   display: flex;
@@ -29,12 +30,12 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-
+/* Headline styles */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+/* Button base styles */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -49,6 +50,7 @@ button {
 button:hover {
   border-color: #646cff;
 }
+/* Accessibility focus styles */
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
